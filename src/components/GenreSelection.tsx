@@ -24,10 +24,13 @@ export default function GenreSelection() {
   const isSelected = (genre: string) => selectedGenres.includes(genre);
   return (
     <div className="bg-white shadow-lg rounded-lg p-7 mx-3 max-w-2xl">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
-        Let's find your favourite Genres
+      <h1 className="text-2xl font-light italic text-center mb-4">
+        Scriptly logo
       </h1>
-      <p className="text-gray-600 text-center mb-6">
+      <h3 className="text-2xl font-bold text-center text-gray-800 ">
+        Let's find your favourite Genres
+      </h3>
+      <p className="text-gray-600 font-light text-center mb-6">
         Choose the genres you love to read This helps us customize your
         experience.
       </p>

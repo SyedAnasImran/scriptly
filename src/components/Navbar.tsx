@@ -19,23 +19,18 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-4">
             <Link
-              href="#features"
+              href="#Home"
               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Features
+              Home
             </Link>
             <Link
-              href="#community"
+              href="#Explore"
               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Community
+              Explore
             </Link>
-            <Link
-              href="#pricing"
-              className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Pricing
-            </Link>
+
             <Link
               href="#contact"
               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
@@ -84,25 +79,19 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
-              href="#features"
+              href="#home"
               className="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Features
+              Home
             </Link>
             <Link
-              href="#community"
+              href="#Explore"
               className="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Community
+              Explore
             </Link>
             <Link
-              href="#pricing"
-              className="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#contact"
+              href="#Contact"
               className="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact
