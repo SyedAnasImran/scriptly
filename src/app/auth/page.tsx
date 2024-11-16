@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
@@ -31,13 +32,13 @@ const Home: React.FC = () => {
             {/* button */}
             <div className="flex flex-row gap-3 md:justify-start justify-center">
               {/* Writer Button */}
-              <Link href="/writer-dashboard">
+              <Link href="/auth/writer">
                 <button className="w-full bg-gray-800 text-white font-semibold px-5 py-3 rounded-full shadow hover:bg-gray-600 transition-all duration-300 mb-4">
                   Let's Write
                 </button>
               </Link>
               {/* Reader Button */}
-              <Link href="/writer-dashboard">
+              <Link href="/auth/reader">
                 <button className="w-full  bg-cyan-600 text-white font-semibold px-5 py-3 rounded-full shadow hover:bg-cyan-500 transition-all duration-300 mb-4">
                   Let's Read
                 </button>
