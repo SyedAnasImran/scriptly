@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import SignedInNavbarMenu from "./signedInNavbarMenu";
+import UnSignedInNavbarMenu from "./UnSignedInNavbarMenu";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,30 +17,9 @@ const Navbar: React.FC = () => {
               Scriptly
             </Link>
           </div>
-
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-4">
-            <Link
-              href="#Home"
-              className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              href="#Explore"
-              className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Explore
-            </Link>
-
-            <Link
-              href="#contact"
-              className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Contact
-            </Link>
-          </div>
-
+          {/* <SignedInNavbarMenu /> */}
+          <UnSignedInNavbarMenu />
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
